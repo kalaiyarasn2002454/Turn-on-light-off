@@ -1,0 +1,52 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=divice-width,initial-scale=1.0">
+    <title>Light</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <img src="image/menu.png" class="menu-img">
+                <!--<img src="" class="">-->
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Home</a></li>
+
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Logout</a></li>
+                </ul>
+                <button type="button" onclick="togglebtb()" id="btn"> <span></span></button>
+
+
+            </nav>
+            <div class="lamp-container">
+                <img src="image/lamp.jfif" class="lamp" id="light">
+                <img src="image/light.jpg" class="light" >
+
+        </div>
+        <div class="text-container">
+            <h1>Latest<br> in lighting</h1>
+            <p>This our first projecs using html,css and javascript how to on the light in the web page .</p>
+            <a href="">Check All Collections</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+
+            </div>
+
+        </div>
+        <script>
+            var btn=document.getElementById("btn");
+            
+            var light=document.getElementById("light");
+            function togglebtb(){
+                btn.classList.toggle("active");
+                light.classList.toggle("on");
+
+        
+            }
+        </script>
+    </body>
+</html>
